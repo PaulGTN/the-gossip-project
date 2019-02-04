@@ -1,25 +1,28 @@
 class StaticPagesController < ApplicationController
-  def welcome
-    @user = User.find_by(first_name: params[:first_name])
-  end
-
+  
   def team
   end
 
   def contact
   end
 
-  def each_gossip
-      @gossips = Gossip.find_by(id: params[:gossip_id])
-      @author = User.find_by(id: @gossip.user_id)
-      @first_name = @author.first_name
-  end
-
-  def authordetails
+  def welcome
+    @user = User.find_by(first_name: params[:first_name])
   end
 
   def accueil
     @gossips = Gossip.all
   end
 
+  def gossip
+    @gossip = Gossip.find_by(id: params[:gossip_id])
+    @author = User.find_by(id: @gossip.user_id)
+    @first_name = @author.first_name  
+    @user = User.find_by(id: params[:user_id])  
+  end
+
+  def profil
+    @user = User.find_by(id: params[:user_id])  
+  end 
+  
 end
