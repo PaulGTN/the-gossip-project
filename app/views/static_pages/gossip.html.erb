@@ -34,7 +34,7 @@
     <p><%= @gossip.content %></p>
     <p>Créé le :</p>
     <p><%= @gossip.created_at %></p>
-    
+    <a href='/gossip/<%= @gossip.id %>/profil/<%= @user.id%>' class='btn btn-info'>En savoir encore plus</a>
     </center>
    
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

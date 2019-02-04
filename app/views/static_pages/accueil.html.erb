@@ -30,9 +30,13 @@
 
     <% @gossips.each do |gossip| %>
       <p>
-        <%= gossip.user.first_name %><br/>
-        <%= gossip.title %><br/>
-        <a href='/gossip/<%= gossip.id%>' class='btn btn-info'>En savoir plus</a>
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title"><%= gossip.user.first_name %></h5>
+    <p class="card-text"><%= gossip.title %></p>
+    <a href='/gossip/<%= gossip.id%>' class='btn btn-info'>En savoir plus</a>
+    </div>
+    </div>
       </p>
     <% end %></center>
 
