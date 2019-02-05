@@ -20,20 +20,20 @@
           <h5 class="my-0 mr-md-auto font-weight-normal">The Gossip Project</h5>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="p-2 text-dark" href=root>ACCUEIL</a>    
-            <a class="p-2 text-dark" href="../team">TEAM</a>
-            <a class="p-2 text-dark" href="../contact">CONTACT</a>  
+            <a class="p-2 text-dark" href="../../../">ACCUEIL</a>    
+            <a class="p-2 text-dark" href="../../../info/team">TEAM</a>
+            <a class="p-2 text-dark" href="../../../info/contact">CONTACT</a>  
           </nav>
   </div>
-    <center><h1>"Tout savoir sur l'auteur"</h1>
-    <p>Auteur :</p>
-    <p><%= @user.first_name %></p>
-    <p>Titre :</p>
-    <p><%= @user.last_name %></p>
-    <p>Contenu :</p>
+  </br></br>
+    <center><h1>Tout savoir sur l'auteur</h1>
+    <h5>Qui c'est :</h5>
+    <p><%= @user.first_name %> <%= @user.last_name %></p>
+    <h5>Son motto :</h5>
     <p><%= @user.description %></p>
-    <p>Créé le :</p>
+    <h5>Son âge :</h5>
     <p><%= @user.age %></p>
+    <h5>Doukékivient :</h5>
     <p><%= @user.city.name %></p>
     </center>
    

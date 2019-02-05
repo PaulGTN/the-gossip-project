@@ -1,24 +1,47 @@
 # README
+  ## THE GOSSIP PROJECT (encore...) 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  <h2>Contenu</h2>
 
-Things you may want to cover:
+  ### 1- Un beau router 
 
-* Ruby version
+  ### 2- Un beau controller qui dit qui fait quoi
 
-* System dependencies
+  ### 3- Des belles views pour que tout ça est une belle tête
 
-* Configuration
+## Etapes d'utilisation :
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+Pour lancer le programme une fois gitcloné :
 
-* Services (job queues, cache servers, search engines, etc.)
+```
 
-* Deployment instructions
+   $> bundle install
 
-* ...
+```
+Ensuite : 
+
+```
+
+   $> rails db:migrate
+
+```
+Après : 
+
+```
+
+   $> rails db:seed
+
+```
+Après : 
+
+```
+
+   $> rails server
+
+```
+
+Et c'est parti ! Si tu veux un petit accueil personnalisé tape ton prénom ou ce que tu veux après localhost:3000 en oubliant pas le slash entre les deux !
+
+Ps : il est actuellement 1h15 et je vais me pencher sur les tests donc chers correcteurs ne vous attendez pas à ce que je sois là à 9h pétantes pour vos coups de fil !

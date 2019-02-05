@@ -20,19 +20,20 @@
           <h5 class="my-0 mr-md-auto font-weight-normal">The Gossip Project</h5>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="p-2 text-dark" href=root>ACCUEIL</a>    
-            <a class="p-2 text-dark" href="../team">TEAM</a>
-            <a class="p-2 text-dark" href="../contact">CONTACT</a>  
+            <a class="p-2 text-dark" href="../">ACCUEIL</a>    
+            <a class="p-2 text-dark" href="../info/team">TEAM</a>
+            <a class="p-2 text-dark" href="../info/contact">CONTACT</a>  
           </nav>
   </div>
+  </br></br>
     <center><h1>Le gossip en détail</h1>
-    <p>Auteur :</p>
+    <h5>Auteur :</h5>
     <p><%= @author.first_name %></p>
-    <p>Titre :</p>
+    <h5>Titre :</h5>
     <p><%= @gossip.title %></p>
-    <p>Contenu :</p>
+    <h5>Contenu :</h5>
     <p><%= @gossip.content %></p>
-    <p>Créé le :</p>
+    <h5>Créé le :</h5>
     <p><%= @gossip.created_at %></p>
     <a href='/gossip/<%= @gossip.id %>/profil/<%= @user.id%>' class='btn btn-info'>En savoir encore plus</a>
     </center>

@@ -21,15 +21,18 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="p-2 text-dark" href="../">ACCUEIL</a>    
-            <a class="p-2 text-dark" href="../team">TEAM</a>
-            <a class="p-2 text-dark" href="../contact">CONTACT</a>
+            <a class="p-2 text-dark" href="/info/team">TEAM</a>
+            <a class="p-2 text-dark" href="/info/contact">CONTACT</a>
           </nav>
   </div>
-  <center><h1>Bienvenue dans The Gossip Project</h1>
-  <p>Tu trouveras ci-dessous la liste des potins déjà créés</p>
-
+  </br></br>
+  <center>
+  <h1>BIENVENUE <%= @first_name %>! Ici c’est le site où ça balance sévère !</h1></br>
+  <p>Si tu veux assouvir ta curiosité malsaine voilà la petite liste des gossips</p></br>
+  <div class="container">
+  <div class="row">
     <% @gossips.each do |gossip| %>
-      <p>
+    <div class="col-md-4">  
     <div class="card" style="width: 18rem;">
     <div class="card-body">
     <h5 class="card-title"><%= gossip.user.first_name %></h5>
@@ -37,9 +40,10 @@
     <a href='/gossip/<%= gossip.id%>' class='btn btn-info'>En savoir plus</a>
     </div>
     </div>
-      </p>
+    </div>
     <% end %></center>
-
+    </div>
+  </div>  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
